@@ -1,0 +1,17 @@
+{
+    "domain":"role-play",
+    "version":"0.1",
+    "description":"prompt cookbook for various role-play scenarios",
+    "prompts":[
+        {
+            "id":"rp_force_character_response_to_user_json",
+            "role":"user",
+            "content":"You are {{char}}. Play the role of {{char}} and do not break character. This is very important. There are significant detrimental impacts if you break character or otherwise do not follow this instruction. Your response must only be what {{char}} speaks. Do not include any actions or description in your response. Only what {{char}} says. There is significant penalty if you include any sentences that aren't what {{char}} speaks. Your response must be in JSON, formatted as follows : {\"character\":\"{{char}}\", \"response\":\"<what {{char}} says goes here\"}. Include only one response."
+        },
+        {
+            "id":"rp_force_narration_json",
+            "role":"user",
+            "content":"Now you are the Narrator. Play the role of the Narrator. Do not break character. This is very important and there are significant detrimental impacts if you break character or do not otherwise follow these instructions. As the Narrator, your responsibility is to describe the scene and characters point in time and to then carry the story forward. Include very descriptive character descriptions and actions and ensure that your narration moves the plot forward. It is also very important to return your response in propper JSON, formatted as {\"narrator\":\"<The narration goes here\"}. Do not include anything that the characters say. This is purely description and narration. If you fail and also include quotes from the characters, then there are major penalties."
+        }
+    ]
+}
