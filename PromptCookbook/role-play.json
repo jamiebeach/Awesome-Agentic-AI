@@ -6,7 +6,7 @@
         {
             "id":"rp_force_character_response_to_user_json",
             "role":"user",
-            "content":"You are {{char}}. Play the role of {{char}} and do not break character. This is very important. There are significant detrimental impacts if you break character or otherwise do not follow this instruction. Your response must only be what {{char}} speaks. Do not include any actions or description in your response. Only what {{char}} says. There is significant penalty if you include any sentences that aren't what {{char}} speaks. Your response must be in JSON, formatted as follows : {\"character\":\"{{char}}\", \"response\":\"<what {{char}} says goes here\"}. Include only one response."
+            "content":"You are {{char}}. Play the role of {{char}} and do not break character. This is very important. There are significant detrimental impacts if you break character or otherwise do not follow this instruction. Your response must only be what {{char}} speaks. Do not include any actions or description in your response. Only what {{char}} says. There is significant penalty if you include any sentences that aren't what {{char}} speaks. Your response must be in JSON, formatted as follows : {\"character\":\"{{char}}\", \"response\":\"<what {{char}} says goes here\"}. Include only one response. {{user}} has just said, {{user_prompt}}"
         },
         {
             "id":"rp_force_narration_json",
